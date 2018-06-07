@@ -20,17 +20,17 @@ public class RockPaperScissors {
   static Scanner input = new Scanner(System.in);
   static Random rand = new Random();
 
-  /* I don't understand the word Type here, but basically this says, 'User should be defined as whatever variable
-   * is returned after running the getUserType thingy and computer should be defined as whatever variable is
-   * returned after running the getComputerType thingy. Is that correct? 
+  /* I've just realised the word Type must relate to the file Type.java, but I don't understand exactly how 
+   * that relationship works or why lines don't just read user = getUserType for example. Basically this says, 
+   * 'User should be defined as whatever variable is returned after running the getUserType thingy and computer 
+   * should be defined as whatever variable is returned after running the getComputerType thingy though. 
    */
   public static void main(String[] args) {
     Type user = getUserType();
     Type computer = getComputerType();
 
     /* so this tells the program to ask for a play in the form of keyboard input from the user if user is
-     * currently null. I don't know how this works to be honest or why it doesn't accept RAOACK but does accept
-     * ROCK for example.
+     * currently null. 
      */
     while (user == null) {
       System.out.println("Enter your play: ");
@@ -41,7 +41,7 @@ public class RockPaperScissors {
     }
 
     /*This bit decides the outcome of the game, comparing the 'user' and 'computer' variables which were defined 
-     * on lines 28 and 29. 
+     * earlier. I don't quite get how beats works or calls the operation thingy from the other file though.
      */
     
     if (user.equals(computer)) {

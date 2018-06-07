@@ -1,3 +1,4 @@
+// Again I'm not sure what everything means here, for example enum
 public enum Type {
   ROCK {
     @Override
@@ -17,6 +18,10 @@ public enum Type {
       return other == PAPER;
     }
   };
+
+/* Ah this is what does the error checking bit, if the user inputs anything but ROCK PAPER or SCISSOR then
+ * this always returns NULL. 
+ */
 
   public static Type parseType(String value) {
     if (value.equals("ROCK")) {
